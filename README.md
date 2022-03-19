@@ -240,7 +240,9 @@ f1();
 ```
 
 ## `SchoolAuth.findUser()`
-인수로 전달한 String 값을 가진 학교 목록을 반환합니다.
+지정한 학교에 이름과 생년월일(YYMMDD)을 가진 학생이 있는지 검사합니다.
+
+**`SchoolAuth.init()` 호출 없이 `SchoolAuth.findUser()`을 시도하는 경우, Error가 throw됩니다.**
 
 | # | Parameter | Type | Description |
 | -- | -- | -- | -- |
