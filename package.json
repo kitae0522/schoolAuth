@@ -1,0 +1,31 @@
+{
+  "name": "schoolauth",
+  "version": "1.0.0",
+  "description": "학교 인증",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist/index.js",
+    "dev": "nodemon src/example.ts",
+    "build": "tsc -p ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kitae0522/schoolAuth.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kitae0522/schoolAuth/issues"
+  },
+  "homepage": "https://github.com/kitae0522/schoolAuth#readme",
+  "devDependencies": {
+    "@types/node": "^16.6.2",
+    "nodemon": "^2.0.12",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.3.5"
+  },
+  "dependencies": {
+    "axios": "^0.25.0",
+    "node-jsencrypt-fix": "^1.0.0"
+  }
+}
