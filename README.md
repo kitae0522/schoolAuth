@@ -4,7 +4,7 @@
 
 # Introduce
 >
-> 교육부가 운영하는 건강상태 자가진단 웹사이트(https://hcs.eduro.go.kr/)를 분석하고, 이를 통해 학교 인증 API를 제작했습니다.
+> 교육부가 운영하는 건강상태 자가진단 웹사이트( https://hcs.eduro.go.kr )를 분석하고, 이를 통해 학교 인증 API를 제작했습니다.
 >
 > 이 Repository는 오픈소스로 관리됩니다. 직접 PR 넣어주시면 코드리뷰 진행 후 배포하겠습니다.
 > 
@@ -208,6 +208,7 @@ console.log(schoolAuth._data.EDUTYPE.HIGH) // '4'
 ### Example
 ```typescript
 const schoolAuth = new SchoolAuth();
+
 schoolAuth.init(schoolAuth._data.REGION.SEOUL[1], 'B100000581');
 ```
 
@@ -247,7 +248,7 @@ f1();
 | 2 | schoolType | `string` | 교육기관 종류 |
 | 3 | schoolName | `string` | 학교 이름 |
 
-**Return Type: [여기를 클릭하여 *searchSchoolType*를 읽어주세요!](./src/types/index.ts)**
+**Return Type: [여기를 클릭하여 *findUserType*를 읽어주세요!](./src/types/index.ts)**
 
 ### Example
 ```typescript
