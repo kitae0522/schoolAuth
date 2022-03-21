@@ -2,7 +2,7 @@ import axios from 'axios';
 import RSA_ENC from './cryptoHandle';
 import { findUserType } from '../types';
 
-const findUserAPIHandle = (authURL: string): string => (`https://${authURL}/v2/findUser?`)
+const findUserAPIHandle = (authURL: string): string => (`https://${authURL}/v2/findUser`)
 
 const findUser = async (authURL: string, schoolCode: string, userName: string, userBirthday: string):
     Promise<findUserType> => {

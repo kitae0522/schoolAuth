@@ -246,15 +246,16 @@ f1();
 
 | # | Parameter | Type | Description |
 | -- | -- | -- | -- |
-| 1 | locationType | `string` | 교육청 관할 지역 |
-| 2 | schoolType | `string` | 교육기관 종류 |
-| 3 | schoolName | `string` | 학교 이름 |
+| 1 | userName | `string` | 학생 이름 |
+| 2 | userBirthday | `string` | 학생 생년월일 (YYMMDD) |
 
 **Return Type: [여기를 클릭하여 *findUserType*를 읽어주세요!](./src/types/index.ts)**
 
 ### Example
 ```typescript
 const schoolAuth = new SchoolAuth();
+
+schoolAuth.init(schoolAuth._data.REGION.SEOUL[1], 'B100000581');
 
 const f2 = async () => {
     const authResult = await schoolAuth.findUser('송기태', '040522')
