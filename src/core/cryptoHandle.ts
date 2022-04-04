@@ -15,3 +15,6 @@ const RSA_ENC = (item: string) => {
 }
 
 export default RSA_ENC;
+
+// 자가진단 사이트에서 주고받는 특정 데이터는 RSA로 암호화되어있기 때문에,
+// 키를 통해서 데이터를 암호화시키는 역할을 함
