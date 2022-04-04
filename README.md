@@ -1,5 +1,5 @@
 ![main](./docs/main.png)
-
+# <span style="color:red">!!! NOT MINE, FORKED !!! </span>
 # 건강상태 자가진단 웹사이트를 이용한 학교 인증 API
 
 # Introduce
