@@ -15,18 +15,18 @@ const findUser = async (authURL: string, schoolCode: string, userName: string, u
             JSON.stringify({
                 name: RSA_ENC(userName), // 이름 RSA 암호화해서 넣어두기
                 birthday: RSA_ENC(userBirthday), // 생일도
-                loginType: 'school',
+                loginType: 'school', //
                 orgCode: schoolCode
             }), // 를 JSON화해두기
             { headers: { 'Content-Type': 'application/json; charset=utf-8' } });
         return {
-            isError: false,
+            isError: false, // 인증에 성공했으므로 에러는 존재하지 않음
             message: '학생 인증에 성공했습니다.',
             userName, userBirthday
         };
     } catch {
         return {
-            isError: true,
+            isError: true, //catch error
             message: '학생 인증에 실패했습니다.',
             userName, userBirthday
         };
