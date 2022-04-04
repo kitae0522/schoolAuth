@@ -1,5 +1,6 @@
 ![main](./docs/main.png)
-# <span style="color:red">!!! NOT MINE, FORKED !!! </span>
+# !!! NOT MINE, FORKED !!!
+# https://github.com/kitae0522/schoolAuth
 # 건강상태 자가진단 웹사이트를 이용한 학교 인증 API
 
 # Introduce
